@@ -6,5 +6,5 @@ Development stages:
 *  Layout & brainstorm
 *  Final wireframes
 *  Build MVP site in react
-*  Deploy initial site ( research this. Vercel, Netlify, other? )
+*  Deploy initial site ( research this. Github, Firebase, Vercel, other? )
 *  Further updates & development as needed
