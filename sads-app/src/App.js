@@ -1,17 +1,16 @@
 import './App.css';
-import logo from './images/sads_logo_cropped.png';
+import logo from './assets/images/sads_logo_cropped.png';
+import NavBar from './navbar.jsx';
+import Footer from './footer.jsx';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <b>
-          <p>
-          SADS WEBSITE!!!!!!!!
-        </p>
-        </b>
-      </header>
+    <div className="App"  style={{
+          fontFamily: '"Riona Sans Black", monospace',
+        }}>
+          <NavBar />
+          <div style={{ margin: "50px 0" }}></div> {/* Temporary margin */}
+          <Footer />
     </div>
   );
 }
