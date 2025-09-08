@@ -39,7 +39,7 @@ export default function Modal({ triggerText, children }) {
             display: "flex",
             alignItems: "flex-start",
             justifyContent: "center",
-            paddingTop: "10vh",
+            paddingTop: "20vh",
           },
           content: {
             position: "relative",
@@ -47,7 +47,6 @@ export default function Modal({ triggerText, children }) {
             maxWidth: "400px",
             width: "100%",
             padding: "20px",
-            borderRadius: "10px",
           },
         }}
       >
