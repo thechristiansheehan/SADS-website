@@ -1,7 +1,12 @@
+import React, { useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './App.css';
-import logo from './assets/images/sads_logo_cropped.png';
 import NavBar from './navbar.jsx';
 import Footer from './footer.jsx';
+import Home from './Home.jsx';
+import About from './About.jsx';
+import Calendar from './Calendar.jsx';
+import Resources from './Resources.jsx';
 
 function App() {
   return (
@@ -9,7 +14,14 @@ function App() {
           fontFamily: '"Riona Sans Black", monospace',
         }}>
           <NavBar />
-          <div style={{ margin: "50px 0" }}></div> {/* Temporary margin */}
+          <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/calendar" element={<Calendar />} />
+        <Route path="/resources" element={<Resources />} />
+      </Routes>
+    </Router>
           <Footer />
     </div>
   );
