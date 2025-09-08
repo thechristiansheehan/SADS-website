@@ -2,13 +2,12 @@ import React from 'react';
 
 const Calendar = () => {
   return (
- <p>
-    <br></br>
-    <br></br>
+ <div>
+    <br />
     This is the calendar page
-    <br></br>
-    <br></br>
-</p>
+    <br />
+    <br />
+</div>
 );
 };
 
