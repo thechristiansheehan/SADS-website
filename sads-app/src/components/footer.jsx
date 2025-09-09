@@ -1,9 +1,12 @@
 import React from 'react';
 import './footer.css';
+import logo from '../assets/images/sads_logo_cropped.png'
 
 const Footer = () => {
   return (
  <footer>
+  <br></br>
+  <img width = "150px" src={logo}></img>
     <br></br>
     <br></br>
     This is the footer component.

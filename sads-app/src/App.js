@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './App.css';
-import NavBar from './navbar.jsx';
-import Footer from './footer.jsx';
+import NavBar from './components/navbar.jsx';
+import Footer from './components/footer.jsx';
 import Home from './Home.jsx';
 import About from './About.jsx';
 import Calendar from './Calendar.jsx';

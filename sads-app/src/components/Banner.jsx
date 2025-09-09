@@ -1,9 +1,9 @@
 import React from 'react';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
-import ducks1 from './assets/images/ducks.jpg'
-import ducks2 from './assets/images/ducks2.jpg'
-import ducks3 from './assets/images/ducks3.jpg'
-import ducks4 from './assets/images/ducks4.jpg'
+import ducks1 from '../assets/images/ducks.jpg'
+import ducks2 from '../assets/images/ducks2.jpg'
+import ducks3 from '../assets/images/ducks3.jpg'
+import ducks4 from '../assets/images/ducks4.jpg'
 import '@splidejs/react-splide/css';
 
 const Banner = () => {

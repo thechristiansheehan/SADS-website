@@ -1,6 +1,6 @@
 import React from 'react';
-import Modal from "./Modal";
-import Banner from "./Banner";
+import Modal from "./components/Modal";
+import Banner from "./components/Banner";
 import ducks1 from "./assets/images/ducks.jpg";
 import ducks2 from "./assets/images/ducks2.jpg";
 import ducks3 from "./assets/images/ducks3.jpg";
@@ -32,17 +32,15 @@ const Home = () => {
       <img src={ducks1} alt="duck card" style={{ width: "100%" }} />
       <div style={{ padding: "8px" }}>
         <h4 style={{ margin: 0 }}>Duck</h4>
-        <p style={{ margin: "4px 0 0", fontSize: "0.9rem", color: "#666" }}>
+        <p style={{ margin: "4px 0 0", fontFamily: "RionaSansMedium", fontSize: "0.9rem", color: "#000" }}>
           quack
         </p>
       </div>
     </div>
   }
 >
-  <h2>This is a modal.</h2>
-  Go SADS! but stay there...
-  <br />
-  <br />
+  <h2 style={{ fontFamily: "RionaSansBlack" }}>This is a modal.</h2>
+  <p style={{ fontFamily: "RionaSansMedium", fontSize: "15px" }}>Go SADS! but stay there...</p>
   <img src={ducks1} style={{ width: "300px" }} alt="inside modal" />
 </Modal>
 
@@ -61,17 +59,15 @@ const Home = () => {
       <img src={ducks2} alt="duck card" style={{ width: "100%" }} />
       <div style={{ padding: "8px" }}>
         <h4 style={{ margin: 0 }}>Duck 2</h4>
-        <p style={{ margin: "4px 0 0", fontSize: "0.9rem", color: "#666" }}>
+        <p style={{ margin: "4px 0 0", fontFamily: "RionaSansMedium", fontSize: "0.9rem", color: "#000" }}>
           quack quack
         </p>
       </div>
     </div>
   }
 >
-  <h2>This is a modal.</h2>
-  Go SADS! but stay there...
-  <br />
-  <br />
+  <h2 style={{ fontFamily: "RionaSansBlack" }}>This is a modal.</h2>
+  <p style={{ fontFamily: "RionaSansMedium", fontSize: "15px" }}>Go SADS! but stay there...</p>
   <img src={ducks2} style={{ width: "300px" }} alt="inside modal" />
 </Modal>
 
@@ -90,17 +86,15 @@ const Home = () => {
       <img src={ducks3} alt="duck card" style={{ width: "100%" }} />
       <div style={{ padding: "8px" }}>
         <h4 style={{ margin: 0 }}>Duck 3</h4>
-        <p style={{ margin: "4px 0 0", fontSize: "0.9rem", color: "#666" }}>
+        <p style={{ margin: "4px 0 0", fontFamily: "RionaSansMedium", fontSize: "0.9rem", color: "#000" }}>
           quack quack quack
         </p>
       </div>
     </div>
   }
 >
-  <h2>This is a modal.</h2>
-  Go SADS! but stay there...
-  <br />
-  <br />
+  <h2 style={{ fontFamily: "RionaSansBlack" }}>This is a modal.</h2>
+  <p style={{ fontFamily: "RionaSansMedium", fontSize: "15px" }}>Go SADS! but stay there...</p>
   <img src={ducks3} style={{ width: "300px" }} alt="inside modal" />
 </Modal>
 
@@ -119,17 +113,15 @@ const Home = () => {
       <img src={ducks4} alt="duck card" style={{ width: "100%" }} />
       <div style={{ padding: "8px" }}>
         <h4 style={{ margin: 0 }}>Duck 4</h4>
-        <p style={{ margin: "4px 0 0", fontSize: "0.9rem", color: "#666" }}>
+        <p style={{ margin: "4px 0 0", fontFamily: "RionaSansMedium", fontSize: "0.9rem", color: "#000" }}>
           quack quack quack quack
         </p>
       </div>
     </div>
   }
 >
-  <h2>This is a modal.</h2>
-  Go SADS! but stay there...
-  <br />
-  <br />
+  <h2 style={{ fontFamily: "RionaSansBlack" }}>This is a modal.</h2>
+  <p style={{ fontFamily: "RionaSansMedium", fontSize: "15px" }}>Go SADS! but stay there...</p>
   <img src={ducks4} style={{ width: "300px" }} alt="inside modal" />
 </Modal>
 </div>

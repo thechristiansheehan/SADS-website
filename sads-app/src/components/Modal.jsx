@@ -8,7 +8,7 @@ export default function Modal({ trigger, children }) {
 
   return (
     <div>
-      {/* Trigger (can be text, card, image, etc.) */}
+
       <div
         onClick={() => setIsOpen(true)}
         style={{ display: "inline-block", cursor: "pointer", userSelect: "none" }}
