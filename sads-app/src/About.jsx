@@ -4,10 +4,12 @@ import ducks5 from "./assets/images/ducks5.png"
 import ducks6 from "./assets/images/ducks6.png"
 import ducks7 from "./assets/images/ducks7.png"
 import ducks8 from "./assets/images/ducks8.png"
+import NavBar from './components/navbar.jsx';
 
 const About = () => {
   return (
  <div>
+    <NavBar />
     <br />
     <p style = {{ fontFamily: "RionaSansMedium", fontSize: "20px"}}>SADS is the official duck club @ SMU</p>
     <br />

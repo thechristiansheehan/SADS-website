@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './App.css';
-import NavBar from './components/navbar.jsx';
 import Footer from './components/footer.jsx';
 import Home from './Home.jsx';
 import About from './About.jsx';
@@ -13,7 +12,6 @@ function App() {
     <div className="App"  style={{
           fontFamily: '"Riona Sans Black", monospace',
         }}>
-          <NavBar />
           <Router>
       <Routes>
         <Route path="/" element={<Home />} />
