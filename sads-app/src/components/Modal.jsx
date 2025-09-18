@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ReactModal from "react-modal";
+import "./modal.css";
 
 ReactModal.setAppElement("#root");
 
@@ -8,7 +9,7 @@ export default function Modal({ trigger, children }) {
 
   return (
     <div>
-
+      {/* Trigger */}
       <div
         onClick={() => setIsOpen(true)}
         style={{ display: "inline-block", cursor: "pointer", userSelect: "none" }}
@@ -16,43 +17,16 @@ export default function Modal({ trigger, children }) {
         {trigger}
       </div>
 
+      {/* Modal */}
       <ReactModal
         isOpen={isOpen}
         onRequestClose={() => setIsOpen(false)}
         contentLabel="Reusable Modal"
-        style={{
-          overlay: {
-            zIndex: 1100,
-            backgroundColor: "rgba(0, 0, 0, 0.5)",
-            display: "flex",
-            alignItems: "flex-start",
-            justifyContent: "center",
-            paddingTop: "20vh",
-          },
-          content: {
-            position: "relative",
-            inset: "unset",
-            maxWidth: "500px",
-            width: "100%",
-            padding: "20px",
-            borderRadius: "0px",
-            fontSize: "15px",
-          },
-        }}
+        overlayClassName="ReactModal__Overlay"
+        className="ReactModal__Content"
       >
-        <button
-          onClick={() => setIsOpen(false)}
-          style={{
-            background: "none",
-            border: "none",
-            fontSize: "2rem",
-            color: "black",
-            cursor: "pointer",
-            position: "absolute",
-            top: "10px",
-            right: "10px",
-          }}
-        >
+        {/* Close button */}
+        <button onClick={() => setIsOpen(false)} className="modal-close">
           ×
         </button>
 
