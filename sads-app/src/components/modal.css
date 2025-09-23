@@ -19,10 +19,12 @@
   inset: unset !important;
   max-width: 500px !important;
   width: 90% !important;
-  background: white !important;
+  background: #404040 !important;
   padding: 20px !important;
   font-size: 15px !important;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3) !important;
+  color: white;
+  transform: translateY(-5%);
 }
 
 /* Close button */
@@ -30,7 +32,7 @@
   background: none;
   border: none;
   font-size: 2rem;
-  color: black;
+  color: white;
   cursor: pointer;
   position: absolute;
   top: 10px;

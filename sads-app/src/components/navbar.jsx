@@ -1,5 +1,6 @@
 import './navbar.css';
 import logo from '../assets/images/sads_logo.png';
+import { HashLink } from 'react-router-hash-link';
 
 const Navbar = () => {
   return (
@@ -8,7 +9,7 @@ const Navbar = () => {
         <img width="80px" src={logo} alt="SADS Logo" />
       </a>
       <div className="nav-links">
-        <a href="about">About</a>
+        <a href="#temp">About</a>
         <a href="calendar">Calendar</a>
         <a href="resources">Resources</a>
       </div>

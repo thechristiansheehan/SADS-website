@@ -4,6 +4,7 @@ import ducks6 from "./assets/images/ducks6.png";
 import ducks7 from "./assets/images/ducks7.png";
 import ducks8 from "./assets/images/ducks8.png";
 import NavBar from "./components/navbar.jsx";
+import "./Home.css";
 
 const About = () => {
   return (

@@ -1,6 +1,6 @@
 nav {
   justify-content: space-between;
-  background-color: rgba(4, 124, 236, 0.6);
+  background-color: rgb(49, 40, 69, 0.6);
   backdrop-filter: blur(5px);
   padding: 5px 50px;
   display: flex;
@@ -10,6 +10,7 @@ nav {
   left: 0;
   width: 100%;
   z-index: 1000;
+  filter: drop-shadow(0px 5px 8px rgba(0, 0, 0, 0.5));
 }
 
 .nav-links {
@@ -20,6 +21,7 @@ nav {
   margin: 0;
   font-size: 20px;
   padding-right: 85px;
+  filter: drop-shadow(1px 1px 0px rgba(0, 0, 0, 0.5));
 }
 
 .nav-links a {
@@ -39,6 +41,8 @@ nav {
 
 .home-link {
   margin-top: 5px;
+  filter: drop-shadow(1px 1px 0px rgba(116, 31, 100, 1));
+
 }
 
 .home-link:hover {

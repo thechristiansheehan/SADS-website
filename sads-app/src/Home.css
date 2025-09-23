@@ -12,18 +12,20 @@
   height: 400px;
   object-fit: cover;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 .banner-overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .banner-logo {
@@ -63,16 +65,22 @@
   width: 200px;
   overflow: hidden;
   text-align: center;
-  background-color: #eaeaea;
+  background-color: #404040;
   cursor: pointer;
+  color:white;
 }
 
 .card:hover {
-  filter: brightness(85%);
+  filter: brightness(80%);
+}
+
+.card:active {
+  transform: scale(0.95);
 }
 
 .card img {
   width: 100%;
+  height:130px;
 }
 
 .card-content {
@@ -87,7 +95,7 @@
   margin: 4px 0 0;
   font-family: "RionaSansMedium", sans-serif;
   font-size: 0.9rem;
-  color: #000;
+  color: rgba(255, 255, 255, 0.799);
 }
 
 /* ===================== */

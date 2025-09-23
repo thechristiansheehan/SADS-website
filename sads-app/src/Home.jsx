@@ -15,7 +15,7 @@ const Home = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 400) {
+      if (window.scrollY > 345) {
         setShowNav(true);
       } else {
         setShowNav(false);
@@ -43,8 +43,8 @@ const Home = () => {
         <div className="banner-overlay">
           <img src={logo} alt="header logo" className="banner-logo" />
 
-          <div className="banner-links">
-            <a href="about" className="header-link">
+          <div className="banner-links" id="temp">
+            <a href="#temp" className="header-link">
               About
             </a>
             <a href="calendar" className="header-link">
