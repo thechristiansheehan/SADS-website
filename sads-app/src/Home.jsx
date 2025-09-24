@@ -5,6 +5,7 @@ import ducks1 from "./assets/images/ducks.jpg";
 import ducks2 from "./assets/images/ducks2.jpg";
 import ducks3 from "./assets/images/ducks3.jpg";
 import ducks4 from "./assets/images/ducks4.jpg";
+import ducks6 from "./assets/images/ducks6.png";
 import logo from "./assets/images/sads_logo2.png";
 import banner from "./assets/images/sadsbanner.mp4";
 import NavBar from "./components/navbar.jsx";
@@ -43,8 +44,8 @@ const Home = () => {
         <div className="banner-overlay">
           <img src={logo} alt="header logo" className="banner-logo" />
 
-          <div className="banner-links" id="temp">
-            <a href="#temp" className="header-link">
+          <div className="banner-links">
+            <a href="#about" className="header-link">
               About
             </a>
             <a href="calendar" className="header-link">
@@ -57,8 +58,9 @@ const Home = () => {
         </div>
       </div>
 
-      {/* NavBar shows once you scroll past header */}
-      {showNav && <NavBar />}
+{/* NavBar always exists, className changes based on scroll */}
+<NavBar className={showNav ? "navbar-visible" : "navbar-hidden"} />
+
       <br />
       <Banner />
       <br />
@@ -139,6 +141,17 @@ const Home = () => {
         </Modal>
       </div>
       <br />
+      <div id="about" className="aboutsection">
+  <div className="aboutcontent">
+  <div className="abouttext">SADS is a club at SMU. SADS is a club at SMU. SADS is a club at SMU. SADS is a club at SMU. quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack
+    <br/><br/><a href="">Meet the team →</a>
+  </div>
+  <div className="aboutimage">
+  <img src={ducks6}></img>
+  </div>
+  </div>
+</div>
+
     </div>
   );
 };
