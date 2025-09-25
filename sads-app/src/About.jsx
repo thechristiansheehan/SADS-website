@@ -1,4 +1,4 @@
-import Modal from "./components/modal.jsx";
+import Modal from "./components/Modal.jsx";
 import ducks5 from "./assets/images/ducks5.png";
 import ducks6 from "./assets/images/ducks6.png";
 import ducks7 from "./assets/images/ducks7.png";

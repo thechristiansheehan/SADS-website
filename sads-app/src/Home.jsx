@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Modal from "./components/modal.jsx";
+import Modal from "./components/Modal.jsx";
 import Banner from "./components/Banner";
 import ducks1 from "./assets/images/ducks.jpg";
 import ducks2 from "./assets/images/ducks2.jpg";
