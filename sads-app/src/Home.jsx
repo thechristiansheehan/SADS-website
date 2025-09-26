@@ -10,6 +10,7 @@ import logo from "./assets/images/sads_logo2.png";
 import banner from "./assets/images/sadsbanner.mp4";
 import NavBar from "./components/navbar.jsx";
 import "./Home.css";
+import Upcoming from "./UpcomingEvents.jsx"
 
 const Home = () => {
   const [showNav, setShowNav] = useState(false);
@@ -63,84 +64,7 @@ const Home = () => {
 
       <br />
       <Banner />
-      <br />
-      <br />
-
-      {/* Cards Section */}
-      <div className="cards-container">
-        <Modal
-          trigger={
-            <div className="card">
-              <img src={ducks1} alt="duck card" />
-              <div className="card-content">
-                <h4>Duck</h4>
-                <p>quack</p>
-              </div>
-            </div>
-          }
-        >
-          <h2 style={{ fontFamily: "RionaSansBlack" }}>This is a modal.</h2>
-          <p style={{ fontFamily: "RionaSansMedium", fontSize: "15px" }}>
-            Go SADS! but stay there...
-          </p>
-          <img src={ducks1} style={{ width: "300px" }} alt="inside modal" />
-        </Modal>
-
-        <Modal
-          trigger={
-            <div className="card">
-              <img src={ducks2} alt="duck card" />
-              <div className="card-content">
-                <h4>Duck 2</h4>
-                <p>quack quack</p>
-              </div>
-            </div>
-          }
-        >
-          <h2 style={{ fontFamily: "RionaSansBlack" }}>This is a modal.</h2>
-          <p style={{ fontFamily: "RionaSansMedium", fontSize: "15px" }}>
-            Go SADS! but stay there...
-          </p>
-          <img src={ducks2} style={{ width: "300px" }} alt="inside modal" />
-        </Modal>
-
-        <Modal
-          trigger={
-            <div className="card">
-              <img src={ducks3} alt="duck card" />
-              <div className="card-content">
-                <h4>Duck 3</h4>
-                <p>quack quack quack</p>
-              </div>
-            </div>
-          }
-        >
-          <h2 style={{ fontFamily: "RionaSansBlack" }}>This is a modal.</h2>
-          <p style={{ fontFamily: "RionaSansMedium", fontSize: "15px" }}>
-            Go SADS! but stay there...
-          </p>
-          <img src={ducks3} style={{ width: "300px" }} alt="inside modal" />
-        </Modal>
-
-        <Modal
-          trigger={
-            <div className="card">
-              <img src={ducks4} alt="duck card" />
-              <div className="card-content">
-                <h4>Duck 4</h4>
-                <p>quack quack quack quack</p>
-              </div>
-            </div>
-          }
-        >
-          <h2 style={{ fontFamily: "RionaSansBlack" }}>This is a modal.</h2>
-          <p style={{ fontFamily: "RionaSansMedium", fontSize: "15px" }}>
-            Go SADS! but stay there...
-          </p>
-          <img src={ducks4} style={{ width: "300px" }} alt="inside modal" />
-        </Modal>
-      </div>
-      <br />
+      <Upcoming />
       <div id="about" className="aboutsection">
   <div className="aboutcontent">
   <div className="abouttext">SADS is a club at SMU. SADS is a club at SMU. SADS is a club at SMU. SADS is a club at SMU. quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack

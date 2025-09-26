@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import NavBar from "./components/navbar.jsx";
+import "./Calendar.css";
 
 const API_KEY = "AIzaSyCs7QWetDO87E8_f1JrjKS5ThnnYjWI5Cg"; // Replace
 const CALENDAR_ID = "christiansheehanwebsite@gmail.com"; // Replace
@@ -24,10 +25,10 @@ const Calendar = () => {
           .then(() =>
             window.gapi.client.calendar.events.list({
               calendarId: CALENDAR_ID,
-              timeMin: new Date().toISOString(),
+              timeMin: new Date(2000, 0, 1).toISOString(), // way back so past events are included
               showDeleted: false,
               singleEvents: true,
-              maxResults: 100,
+              maxResults: 200,
               orderBy: "startTime",
             })
           )
@@ -60,26 +61,22 @@ const Calendar = () => {
   const firstDayOfMonth = new Date(year, month, 1);
   const lastDayOfMonth = new Date(year, month + 1, 0);
 
-  // Days from previous month to fill first week
   const prevMonthDaysCount = firstDayOfMonth.getDay();
   const prevMonthLastDate = new Date(year, month, 0).getDate();
 
   const daysArray = [];
-  // Previous month days
   for (let i = prevMonthDaysCount; i > 0; i--) {
     daysArray.push({
       date: new Date(year, month - 1, prevMonthLastDate - i + 1),
       currentMonth: false,
     });
   }
-  // Current month days
   for (let d = 1; d <= lastDayOfMonth.getDate(); d++) {
     daysArray.push({
       date: new Date(year, month, d),
       currentMonth: true,
     });
   }
-  // Next month days to fill last week
   const remaining = 7 - (daysArray.length % 7 || 7);
   for (let d = 1; d <= remaining; d++) {
     daysArray.push({
@@ -94,13 +91,16 @@ const Calendar = () => {
   return (
     <div style={{ maxWidth: "900px", margin: "auto", padding: "20px", color: "white" }}>
       <NavBar />
-      <br /> <br />
+      <div style={{ marginTop: "33px" }}></div>
+
+      {/* Header with arrows */}
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-        <button onClick={goPrevMonth} style={arrowBtnStyle}>&larr;</button>
+        <button onClick={goPrevMonth} className="arrow-btn">⏴</button>
         <h2>{displayDate.toLocaleString("default", { month: "long" })} {year}</h2>
-        <button onClick={goNextMonth} style={arrowBtnStyle}>&rarr;</button>
+        <button onClick={goNextMonth} className="arrow-btn">⏵</button>
       </div>
 
+      {/* Days of week */}
       <div
         style={{
           display: "grid",
@@ -119,6 +119,7 @@ const Calendar = () => {
           const key = date.toISOString().split("T")[0];
           const dayEvents = eventsByDate[key] || [];
           const isToday = key === todayKey;
+          const isPast = date < today.setHours(0, 0, 0, 0);
 
           return (
             <div
@@ -127,54 +128,57 @@ const Calendar = () => {
                 border: "1px solid #ffffff",
                 borderRadius: "0px",
                 padding: "5px",
-                minHeight: "80px",
+                minHeight: "100px",
                 color: currentMonth ? "white" : "#aaa",
-                backgroundColor: isToday ? "#4444ff33" : "transparent",
+                backgroundColor: isToday ? "#404040" : "transparent",
               }}
             >
-{dayEvents.map((event) => {
-  const start = event.start.dateTime
-    ? new Date(event.start.dateTime).toLocaleTimeString([], {
-        hour: "2-digit",
-        minute: "2-digit",
-      })
-    : "All day";
+              {/* Day number */}
+              <div style={{ fontWeight: "bold", marginBottom: "4px" }}>{date.getDate()}</div>
 
-  const location = event.location ? ` @ ${event.location}` : "";
+              {/* Events */}
+              {dayEvents.map((event) => {
+                const start = event.start.dateTime
+                  ? new Date(event.start.dateTime).toLocaleTimeString([], {
+                      hour: "numeric",   // ✅ no leading zero
+                      minute: "2-digit",
+                    })
+                  : "All day";
 
-  return (
-    <div
-      key={event.id}
-      style={{
-        fontSize: "0.75rem",
-        color: currentMonth ? "white" : "#ccc",
-        marginTop: "2px",
-      }}
-    >
-      <strong>{event.summary}</strong>
-      <div style={{ fontSize: "0.7rem" }}>
-        {start}
-        {location}
-      </div>
-    </div>
-  );
-})}
+                return (
+                  <div
+                    key={event.id}
+                    style={{
+                      fontSize: "0.75rem",
+                      marginBottom: "6px",
+                      color: isPast ? "#bcbcbcff" : currentMonth ? "white" : "#ccc",
+                    }}
+                  >
+                    {/* Title */}
+                    <div style={{ fontFamily: "RionaSansBlack", marginBottom: "2px" }}>
+                      {event.summary}
+                    </div>
 
+                    {/* Time */}
+                    <div style={{ fontFamily: "RionaSansMedium", fontSize: "0.7rem", marginBottom: "2px" }}>
+                      {start}
+                    </div>
+
+                    {/* Location */}
+                    {event.location && (
+                      <div style={{ fontFamily: "RionaSansMedium", fontSize: "0.7rem" }}>
+                        {event.location}
+                      </div>
+                    )}
+                  </div>
+                );
+              })}
             </div>
           );
         })}
       </div>
     </div>
   );
-};
-
-// Minimal arrow button styling
-const arrowBtnStyle = {
-  background: "transparent",
-  border: "none",
-  color: "white",
-  fontSize: "1.5rem",
-  cursor: "pointer",
 };
 
 export default Calendar;

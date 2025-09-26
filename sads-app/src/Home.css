@@ -130,7 +130,7 @@ code {
   padding: 10px 20px;
   text-align: center;
   color:white;
-  scroll-margin-top: 80px;
+  scroll-margin-top: 54px;
 }
 
 .aboutcontent {
@@ -154,7 +154,7 @@ code {
   text-decoration: none;
   opacity: 1;
   font-family: "RionaSansBlack", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .abouttext a:hover {
