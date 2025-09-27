@@ -151,7 +151,7 @@ const Calendar = () => {
                     style={{
                       fontSize: "0.75rem",
                       marginBottom: "6px",
-                      color: isPast ? "#bcbcbcff" : currentMonth ? "white" : "#ccc",
+                      color: isPast ? "#aaa" : currentMonth ? "white" : "#aaa",
                     }}
                   >
                     {/* Title */}
