@@ -91,6 +91,7 @@ const Calendar = () => {
   return (
     <div style={{ maxWidth: "900px", margin: "auto", padding: "20px", color: "white" }}>
       <NavBar />
+      <title>Calendar</title>
       <div style={{ marginTop: "33px" }}></div>
 
       {/* Header with arrows */}

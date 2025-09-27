@@ -6,11 +6,11 @@ import ducks8 from "./assets/images/ducks8.png";
 import NavBar from "./components/navbar.jsx";
 import "./Home.css";
 
-const Resources = () => {
+const MeetTheTeam = () => {
   return (
     <div>
       <NavBar />
-      <title>Resources</title>
+      <title>Meet The Team</title>
       <div style={{ marginTop: "80px" }}></div>
 
 
@@ -42,7 +42,7 @@ const Resources = () => {
             >
               <img src={ducks5} alt="duck card" style={{ width: "100%", height: "200px"  }} />
               <div style={{ padding: "8px" }}>
-                <h4 style={{ margin: 0 }}>Intro to R</h4>
+                <h4 style={{ margin: 0 }}>Squeak</h4>
                 <p
                   style={{
                     margin: "4px 0 0",
@@ -51,7 +51,7 @@ const Resources = () => {
                     color: "white",
                   }}
                 >
-                  R is a programming language
+                  President
                 </p>
               </div>
             </div>
@@ -84,7 +84,7 @@ const Resources = () => {
             >
               <img src={ducks6} alt="duck card" style={{ width: "100%", height: "200px" }} />
               <div style={{ padding: "8px" }}>
-                <h4 style={{ margin: 0 }}>Intro to SQL</h4>
+                <h4 style={{ margin: 0 }}>Lucky</h4>
                 <p
                   style={{
                     margin: "4px 0 0",
@@ -93,7 +93,7 @@ const Resources = () => {
                     color: "white",
                   }}
                 >
-                  quack quack quack
+                  Vice President
                 </p>
               </div>
             </div>
@@ -126,7 +126,7 @@ const Resources = () => {
             >
               <img src={ducks7} alt="duck card" style={{ width: "100%", height: "200px"  }} />
               <div style={{ padding: "8px" }}>
-                <h4 style={{ margin: 0 }}>Intro to Python</h4>
+                <h4 style={{ margin: 0 }}>Bubbles</h4>
                 <p
                   style={{
                     margin: "4px 0 0",
@@ -135,7 +135,7 @@ const Resources = () => {
                     color: "white",
                   }}
                 >
-                  Python Python Python
+                  Marketing
                 </p>
               </div>
             </div>
@@ -168,7 +168,7 @@ const Resources = () => {
             >
               <img src={ducks8} alt="duck card" style={{ width: "100%", height: "200px"  }} />
               <div style={{ padding: "8px" }}>
-                <h4 style={{ margin: 0 }}>Excel</h4>
+                <h4 style={{ margin: 0 }}>Fluffy</h4>
                 <p
                   style={{
                     margin: "4px 0 0",
@@ -177,7 +177,7 @@ const Resources = () => {
                     color: "white",
                   }}
                 >
-                  Something or other
+                  Duck Resources
                 </p>
               </div>
             </div>
@@ -196,4 +196,4 @@ const Resources = () => {
   );
 };
 
-export default Resources;
+export default MeetTheTeam;

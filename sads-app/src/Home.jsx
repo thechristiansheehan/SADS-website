@@ -64,11 +64,13 @@ const Home = () => {
 
       <br />
       <Banner />
+      <br />
       <Upcoming />
+      <br />
       <div id="about" className="aboutsection">
   <div className="aboutcontent">
   <div className="abouttext">SADS is a club at SMU. SADS is a club at SMU. SADS is a club at SMU. SADS is a club at SMU. quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack
-    <br/><br/><a href="">Meet the team →</a>
+    <br/><br/><a href="meettheteam">Meet the team →</a>
   </div>
   <div className="aboutimage">
   <img src={ducks6}></img>

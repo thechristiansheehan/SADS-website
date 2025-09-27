@@ -1,6 +1,7 @@
+/* Base Navbar */
 nav {
   justify-content: space-between;
-  background-color: rgb(32, 69, 120, 0.5);
+  background-color: rgba(32, 69, 120, 0.5);
   backdrop-filter: blur(5px);
   padding: 5px 50px;
   display: flex;
@@ -12,6 +13,7 @@ nav {
   z-index: 1000;
 }
 
+/* Desktop Nav Links */
 .nav-links {
   display: flex;
   justify-content: flex-end;
@@ -27,6 +29,7 @@ nav {
   color: white;
   text-decoration: none;
   opacity: 1;
+  transition: opacity 0.2s, transform 0.2s;
 }
 
 .nav-links a:hover {
@@ -37,6 +40,7 @@ nav {
   transform: scale(0.95);
 }
 
+/* Logo link */
 .home-link {
   margin-top: 5px;
 }
@@ -44,3 +48,51 @@ nav {
 .home-link:hover {
   filter: brightness(70%);
 }
+/* ===== Hamburger ===== */
+.hamburger {
+  display: none;              /* hidden by default (desktop) */
+  font-size: 28px;
+  color: white;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1100;
+  margin-right:100px;
+}
+
+/* Make keyboard focus visible */
+.hamburger:focus {
+  outline: 2px solid rgba(255, 255, 255, 0.18);
+  outline-offset: 2px;
+}
+
+/* Mobile styles */
+@media (max-width: 600px) {
+  .hamburger {
+    display: block;   /* show hamburger on mobile */
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 200px;
+    background: rgba(32, 69, 120, 0.5);
+    backdrop-filter: blur(5px);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 22px;
+    padding: 0;
+    transition: right 0.25s ease-in-out;
+    z-index: 1050;
+    margin-right:100px;
+  }
+
+  .nav-links.open {
+    right: 0;
+  }
+}
+

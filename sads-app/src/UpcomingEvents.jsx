@@ -45,7 +45,7 @@ const UpcomingEvents = () => {
       style={{
         maxWidth: "900px",
         margin: "auto",
-        padding: "20px",
+        padding: "10px",
         color: "white",
       }}
     >
