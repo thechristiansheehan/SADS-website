@@ -1,23 +1,49 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import "./navbar.css";
 import logo from "../assets/images/sads_logo.png";
 
-const Navbar = ({ className = "" }) => {
+const Navbar = ({ className = "", showNav }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const navRef = useRef(null);
+
+  // Close hamburger if navbar hides
+  useEffect(() => {
+    if (!showNav) {
+      setIsOpen(false);
+    }
+  }, [showNav]);
+
+  // Close when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (navRef.current && !navRef.current.contains(e.target)) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    document.addEventListener("touchstart", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("touchstart", handleClickOutside);
+    };
+  }, []);
 
   return (
-    <nav className={`navbar ${className}`}>
+    <nav ref={navRef} className={`navbar ${className}`}>
       {/* Logo */}
       <a title="Home" href="/" className="nav-link home-link">
         <img width="80px" src={logo} alt="SADS Logo" />
       </a>
 
-      {/* Hamburger (shows on mobile) */}
+      {/* Hamburger (mobile) */}
       <button
         className={`hamburger ${isOpen ? "open" : ""}`}
         onClick={() => setIsOpen(!isOpen)}
         aria-label="Toggle menu"
-      >☰
+      >
+        ☰
         <span />
         <span />
         <span />

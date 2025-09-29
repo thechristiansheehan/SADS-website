@@ -1,0 +1,15 @@
+.banner-carousel img {
+  object-fit: cover;
+  height: 100%;
+  margin-top:20px;
+}
+
+/* ✅ On mobile: make the carousel a square */
+@media (max-width: 768px) {
+  .banner-carousel img {
+    width: 95vw;
+    aspect-ratio: 1 / 1;  /* enforce square */
+    height: 95vw;
+    margin-top:10px;
+  }
+}

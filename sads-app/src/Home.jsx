@@ -1,14 +1,10 @@
 import React, { useState, useEffect } from "react";
-import Modal from "./components/Modal.jsx";
 import Banner from "./components/Banner";
-import ducks1 from "./assets/images/ducks.jpg";
-import ducks2 from "./assets/images/ducks2.jpg";
-import ducks3 from "./assets/images/ducks3.jpg";
-import ducks4 from "./assets/images/ducks4.jpg";
 import ducks6 from "./assets/images/ducks6.png";
 import logo from "./assets/images/sads_logo2.png";
 import banner from "./assets/images/sadsbanner.mp4";
-import NavBar from "./components/navbar.jsx";
+import Navbar from "./components/navbar.jsx";
+
 import "./Home.css";
 import Upcoming from "./UpcomingEvents.jsx"
 
@@ -59,17 +55,19 @@ const Home = () => {
         </div>
       </div>
 
-{/* NavBar always exists, className changes based on scroll */}
-<NavBar className={showNav ? "navbar-visible" : "navbar-hidden"} />
+<Navbar 
+  showNav={showNav} 
+  className={showNav ? "navbar-visible" : "navbar-hidden"} 
+/>
 
-      <br />
+
       <Banner />
       <br />
       <Upcoming />
       <br />
       <div id="about" className="aboutsection">
   <div className="aboutcontent">
-  <div className="abouttext">SADS is a club at SMU. SADS is a club at SMU. SADS is a club at SMU. SADS is a club at SMU. quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack
+  <div className="abouttext">SADS is a club at SMU. SADS is a club at SMU. SADS is a club at SMU. SADS is a club at SMU. quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack
     <br/><br/><a href="meettheteam">Meet the team →</a>
   </div>
   <div className="aboutimage">

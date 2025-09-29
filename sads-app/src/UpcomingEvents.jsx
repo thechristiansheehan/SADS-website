@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import './Calendar.css';
+import "./Calendar.css";
 
 const API_KEY = "AIzaSyCs7QWetDO87E8_f1JrjKS5ThnnYjWI5Cg"; // Replace
 const CALENDAR_ID = "christiansheehanwebsite@gmail.com"; // Replace
@@ -26,7 +26,7 @@ const UpcomingEvents = () => {
               timeMin: new Date().toISOString(),
               showDeleted: false,
               singleEvents: true,
-              maxResults: 4, // show only 4
+              maxResults: 4, // fetch 4
               orderBy: "startTime",
             })
           )
@@ -40,6 +40,10 @@ const UpcomingEvents = () => {
 
   const today = new Date();
 
+  // ✅ Only show 3 events if on mobile (CSS handles layout)
+  const isMobile = window.matchMedia("(max-width: 768px)").matches;
+  const visibleEvents = isMobile ? events.slice(0, 3) : events;
+
   return (
     <div
       style={{
@@ -49,8 +53,8 @@ const UpcomingEvents = () => {
         color: "white",
       }}
     >
-      <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
-        {events.map((event) => {
+      <div className="events-container">
+        {visibleEvents.map((event) => {
           const startDate = event.start.dateTime
             ? new Date(event.start.dateTime)
             : new Date(event.start.date);
@@ -63,7 +67,7 @@ const UpcomingEvents = () => {
 
           const timeString = event.start.dateTime
             ? startDate.toLocaleTimeString([], {
-                hour: "numeric", // removes leading zero
+                hour: "numeric",
                 minute: "2-digit",
               })
             : "All day";
@@ -74,39 +78,22 @@ const UpcomingEvents = () => {
             <React.Fragment key={event.id}>
               {/* Block */}
               <div
+                className="event-block"
                 style={{
-                  padding: "10px 15px",
-                  minWidth: "160px",
-                  textAlign: "center",
                   backgroundColor: "#404040",
                   border: isToday ? "2px solid white" : "none",
                 }}
               >
-                <div style={{ fontSize: "1.2rem", fontFamily: "RionaSansBlack", marginBottom: "5px" }}>
-                  {event.summary}
-                </div>
-                <div style={{ fontFamily: "RionaSansBlack", fontSize: "0.9rem", fontWeight: "bold", marginBottom: "6px" }}>
-                  {dateString}
-                </div>
-                <div style={{ fontFamily: "RionaSansMedium", fontSize: "0.9rem" }}>
-                  {timeString}
-                </div>
+                <div className="event-title">{event.summary}</div>
+                <div className="event-date">{dateString}</div>
+                <div className="event-time">{timeString}</div>
                 {event.location && (
-                  <div style={{ fontFamily: "RionaSansMedium", fontSize: "0.9rem" }}>
-                    {event.location}
-                  </div>
+                  <div className="event-location">{event.location}</div>
                 )}
               </div>
 
-              {/* Connector line: always shown */}
-              <div
-                style={{
-                  height: "2px",
-                  backgroundColor: "white",
-                  width: "50px",
-                  margin: "0 0px",
-                }}
-              />
+              {/* Connector line */}
+              <div className="connector-line" />
             </React.Fragment>
           );
         })}
