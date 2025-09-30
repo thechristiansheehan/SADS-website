@@ -43,7 +43,7 @@ const Navbar = ({ className = "", showNav }) => {
         onClick={() => setIsOpen(!isOpen)}
         aria-label="Toggle menu"
       >
-        ☰
+        <i class="fa-solid fa-bars"></i>
         <span />
         <span />
         <span />

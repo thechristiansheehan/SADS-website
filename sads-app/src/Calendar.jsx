@@ -89,7 +89,7 @@ const Calendar = () => {
   const goNextMonth = () => setDisplayDate(new Date(year, month + 1, 1));
 
   return (
-    <div style={{ maxWidth: "900px", margin: "auto", padding: "20px", color: "white" }}>
+    <div style={{ maxWidth: "900px", margin: "auto", paddingTop: "20px", paddingBottom: "20px", color: "white" }}>
       <NavBar />
       <title>Calendar</title>
       <div style={{ marginTop: "33px" }}></div>
@@ -106,7 +106,6 @@ const Calendar = () => {
         style={{
           display: "grid",
           gridTemplateColumns: "repeat(7, 1fr)",
-          gap: "10px",
           marginTop: "10px",
         }}
       >
