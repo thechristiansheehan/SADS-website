@@ -45,10 +45,10 @@ const Home = () => {
             <a href="#about" className="header-link">
               About
             </a>
-            <a href="calendar" className="header-link">
+            <a href="#/calendar" className="header-link">
               Calendar
             </a>
-            <a href="resources" className="header-link">
+            <a href="#/resources" className="header-link">
               Resources
             </a>
           </div>
@@ -68,7 +68,7 @@ const Home = () => {
       <div id="about" className="aboutsection">
   <div className="aboutcontent">
   <div className="abouttext">SADS is a club at SMU. SADS is a club at SMU. SADS is a club at SMU. SADS is a club at SMU. quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack
-    <br/><br/><a href="meettheteam">Meet the team →</a>
+    <br/><br/><a href="#/meettheteam">Meet the team →</a>
   </div>
   <div className="aboutimage">
   <img src={ducks6}></img>

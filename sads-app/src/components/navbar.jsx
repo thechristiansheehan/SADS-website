@@ -52,8 +52,8 @@ const Navbar = ({ className = "", showNav }) => {
       {/* Links */}
       <div className={`nav-links ${isOpen ? "open" : ""}`}>
         <a href="/#about" onClick={() => setIsOpen(false)}>About</a>
-        <a href="calendar" onClick={() => setIsOpen(false)}>Calendar</a>
-        <a href="resources" onClick={() => setIsOpen(false)}>Resources</a>
+        <a href="#/calendar" onClick={() => setIsOpen(false)}>Calendar</a>
+        <a href="#/resources" onClick={() => setIsOpen(false)}>Resources</a>
       </div>
     </nav>
   );

@@ -101,7 +101,7 @@ const UpcomingEvents = () => {
 
       {/* View Full Calendar link */}
       <div className="viewfull" style={{ textAlign: "right", marginTop: "15px" }}>
-        <a href="calendar" rel="noopener noreferrer">
+        <a href="#/calendar" rel="noopener noreferrer">
           View full calendar →
         </a>
       </div>
