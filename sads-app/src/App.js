@@ -17,15 +17,14 @@ function App() {
         fontFamily: '"Riona Sans Black", monospace',
       }}
     >
-      <Router basename="/">
+      <HashRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
           <Route path="/calendar" element={<Calendar />} />
           <Route path="/resources" element={<Resources />} />
           <Route path="/meettheteam" element={<MeetTheTeam />} />
         </Routes>
-      </Router>
+      </HashRouter>
 
       <Footer />
     </div>
