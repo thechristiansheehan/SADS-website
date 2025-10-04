@@ -4,6 +4,7 @@ import ducks6 from "./assets/images/ducks6.png";
 import logo from "./assets/images/sads_logo2.png";
 import banner from "./assets/images/sadsbanner.mp4";
 import Navbar from "./components/navbar.jsx";
+import { HashLink } from 'react-router-hash-link';
 
 import "./Home.css";
 import Upcoming from "./UpcomingEvents.jsx"
@@ -42,9 +43,9 @@ const Home = () => {
           <img src={logo} alt="header logo" className="banner-logo" />
 
           <div className="banner-links">
-            <a href="#about" className="header-link">
-              About
-            </a>
+            <HashLink smooth to="/#about" onClick={() => setIsOpen(false)}>
+    About
+  </HashLink>
             <a href="#/calendar" className="header-link">
               Calendar
             </a>

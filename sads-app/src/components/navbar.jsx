@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import "./navbar.css";
 import logo from "../assets/images/sads_logo.png";
+import { HashLink } from 'react-router-hash-link';
 
 const Navbar = ({ className = "", showNav }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -51,7 +52,9 @@ const Navbar = ({ className = "", showNav }) => {
 
       {/* Links */}
       <div className={`nav-links ${isOpen ? "open" : ""}`}>
-        <a href="/#about" onClick={() => setIsOpen(false)}>About</a>
+        <HashLink smooth to="/#about" onClick={() => setIsOpen(false)}>
+    About
+  </HashLink>
         <a href="#/calendar" onClick={() => setIsOpen(false)}>Calendar</a>
         <a href="#/resources" onClick={() => setIsOpen(false)}>Resources</a>
       </div>
