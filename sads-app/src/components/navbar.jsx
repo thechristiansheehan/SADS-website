@@ -33,7 +33,7 @@ const Navbar = ({ className = "", showNav }) => {
   return (
     <nav ref={navRef} className={`navbar ${className}`}>
       {/* Logo */}
-      <a title="Home" href="/index.html" className="nav-link home-link">
+      <a title="Home" href="" className="nav-link home-link">
         <img width="80px" src={logo} alt="SADS Logo" />
       </a>
 
