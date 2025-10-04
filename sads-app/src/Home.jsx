@@ -43,7 +43,7 @@ const Home = () => {
           <img src={logo} alt="header logo" className="banner-logo" />
 
           <div className="banner-links">
-            <HashLink smooth to="/#about" onClick={() => setIsOpen(false)}>
+            <HashLink smooth to="/#about">
     About
   </HashLink>
             <a href="#/calendar" className="header-link">
