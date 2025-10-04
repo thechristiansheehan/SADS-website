@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./Calendar.css";
 
-const API_KEY = "AIzaSyCs7QWetDO87E8_f1JrjKS5ThnnYjWI5Cg"; // Replace
-const CALENDAR_ID = "christiansheehanwebsite@gmail.com"; // Replace
+const API_KEY = "AIzaSyCs7QWetDO87E8_f1JrjKS5ThnnYjWI5Cg";
+const CALENDAR_ID = "5cace666f13ff67ee72411bbf20f23c8847215cf15018f795a0b046664f866a2@group.calendar.google.com";
 
 const UpcomingEvents = () => {
   const [events, setEvents] = useState([]);
