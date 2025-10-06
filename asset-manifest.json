@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "./static/css/main.94f98359.css",
-    "main.js": "./static/js/main.6517b0c6.js",
+    "main.js": "./static/js/main.0c6c28f2.js",
     "static/js/453.f3a76751.chunk.js": "./static/js/453.f3a76751.chunk.js",
+    "static/media/about.png": "./static/media/about.315429b9ee819ab38b3a.png",
     "static/media/sarah.png": "./static/media/sarah.90b2ae1e6eae3b729285.png",
     "static/media/two.png": "./static/media/two.3795b09c55c08165029f.png",
     "static/media/one.png": "./static/media/one.697bc872427e90c14f55.png",
@@ -15,7 +16,6 @@
     "static/media/ducks7.png": "./static/media/ducks7.c6375cce5a0bd7269c17.png",
     "static/media/nia.jpeg": "./static/media/nia.b6fb8e20c9f0434806a4.jpeg",
     "static/media/python.png": "./static/media/python.86c38092a09ff78968c7.png",
-    "static/media/ducks.jpg": "./static/media/ducks.9fa6b32f473e44faa610.jpg",
     "static/media/ducks8.png": "./static/media/ducks8.98960bb9ff15e7edfb79.png",
     "static/media/RionaSansBlack.ttf": "./static/media/RionaSansBlack.9c828bdca7a8fc2e6442.ttf",
     "static/media/sads_logo.png": "./static/media/sads_logo.88d07e896311a6f9aa80.png",
@@ -27,11 +27,11 @@
     "static/media/radha.jpg": "./static/media/radha.1c5354495ccb766c6ebb.jpg",
     "index.html": "./index.html",
     "main.94f98359.css.map": "./static/css/main.94f98359.css.map",
-    "main.6517b0c6.js.map": "./static/js/main.6517b0c6.js.map",
+    "main.0c6c28f2.js.map": "./static/js/main.0c6c28f2.js.map",
     "453.f3a76751.chunk.js.map": "./static/js/453.f3a76751.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.94f98359.css",
-    "static/js/main.6517b0c6.js"
+    "static/js/main.0c6c28f2.js"
   ]
 }
