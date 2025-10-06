@@ -1,9 +1,8 @@
 import React from 'react';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
-import ducks1 from '../assets/images/ducks.jpg';
-import ducks2 from '../assets/images/ducks2.jpg';
-import ducks3 from '../assets/images/ducks3.jpg';
-import ducks4 from '../assets/images/ducks4.jpg';
+import one from '../assets/images/one.png';
+import two from '../assets/images/two.png';
+
 import '@splidejs/react-splide/css';
 import './Banner.css'; // ✅ new stylesheet
 
@@ -18,28 +17,18 @@ const Banner = () => {
         pauseOnHover: true,
         pauseOnFocus: true,
         resetProgress: true,
-        height: '400px', // default desktop height
+        height: '400px',
       }}
       className="banner-carousel"
     >
       <SplideSlide>
-        <a href="https://example.com">
-          <img src={ducks1} alt="quack" />
+        <a>
+          <img src={one} />
         </a>
       </SplideSlide>
       <SplideSlide>
-        <a href="https://example.com">
-          <img src={ducks2} alt="quack quack" />
-        </a>
-      </SplideSlide>
-      <SplideSlide>
-        <a href="https://example.com">
-          <img src={ducks3} alt="quack quack" />
-        </a>
-      </SplideSlide>
-      <SplideSlide>
-        <a href="https://example.com">
-          <img src={ducks4} alt="quack quack quack" />
+        <a>
+          <img src={two} />
         </a>
       </SplideSlide>
     </Splide>

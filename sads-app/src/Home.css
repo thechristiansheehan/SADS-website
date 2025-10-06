@@ -206,7 +206,7 @@ code {
 }
 
 .aboutimage img {
-  width:300px;
+  width:350px;
 }
 
 /* Grid container */
@@ -224,7 +224,6 @@ code {
   text-align: center;
   background-color: #404040;
   color: white;
-  transition: filter 0.2s ease;
 }
 
 .team-card:hover {

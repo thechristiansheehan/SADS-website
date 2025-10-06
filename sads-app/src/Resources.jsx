@@ -1,8 +1,7 @@
-import Modal from "./components/Modal.jsx";
-import ducks5 from "./assets/images/ducks5.png";
-import ducks6 from "./assets/images/ducks6.png";
-import ducks7 from "./assets/images/ducks7.png";
-import ducks8 from "./assets/images/ducks8.png";
+import excel from "./assets/images/excel.png";
+import python from "./assets/images/python.png";
+import sql from "./assets/images/sql.png";
+import tableau from "./assets/images/tableau.png";
 import NavBar from "./components/navbar.jsx";
 import "./Home.css";
 
@@ -13,7 +12,6 @@ const Resources = () => {
       <title>Resources</title>
       <div style={{ marginTop: "80px" }}></div>
 
-
       <div
         style={{
           display: "flex",
@@ -22,173 +20,125 @@ const Resources = () => {
           justifyContent: "center",
         }}
       >
-        {/* Squeak */}
-        <Modal
-          trigger={
-            <div
-              style={{
-                width: "200px",
-                overflow: "hidden",
-                textAlign: "center",
-                backgroundColor: "#404040",
-                color: "white",
-              }}
-              onMouseEnter={(e) =>
-                (e.currentTarget.style.filter = "brightness(85%)")
-              }
-              onMouseLeave={(e) =>
-                (e.currentTarget.style.filter = "brightness(100%)")
-              }
-            >
-              <img src={ducks5} alt="duck card" style={{ width: "100%", height: "200px"  }} />
-              <div style={{ padding: "8px" }}>
-                <h4 style={{ margin: 0 }}>Intro to R</h4>
-                <p
-                  style={{
-                    margin: "4px 0 0",
-                    fontFamily: "RionaSansMedium",
-                    fontSize: "0.9rem",
-                    color: "white",
-                  }}
-                >
-                  R is a programming language
-                </p>
-              </div>
-            </div>
+        {/* Intro to Excel */}
+        <a
+          href="https://github.com/Statistics-and-Data-Science-SMU/SADS-Tutorials/tree/main/Intro%20to%20Excel"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            width: "200px",
+            overflow: "hidden",
+            textAlign: "center",
+            backgroundColor: "#404040",
+            color: "white",
+            textDecoration: "none",
+          }}
+          onMouseEnter={(e) =>
+            (e.currentTarget.style.filter = "brightness(85%)")
+          }
+          onMouseLeave={(e) =>
+            (e.currentTarget.style.filter = "brightness(100%)")
           }
         >
-          <h2 style={{ fontFamily: "RionaSansBlack" }}>Squeak</h2>
-          <p style={{ fontFamily: "RionaSansMedium", fontSize: "15px" }}>
-            Duck major
-          </p>
-          <img src={ducks5} style={{ width: "300px" }} alt="inside modal" />
-        </Modal>
+          <img
+            src={excel}
+            alt="Intro to Excel"
+            style={{ width: "100%", height: "200px" }}
+          />
+          <div style={{ padding: "8px" }}>
+            <h4 style={{ margin: 0 }}>Intro to Excel</h4>
+          </div>
+        </a>
 
-        {/* Lucky */}
-        <Modal
-          trigger={
-            <div
-              style={{
-                width: "200px",
-                overflow: "hidden",
-                textAlign: "center",
-                backgroundColor: "#404040",
-                color: "white",
-              }}
-              onMouseEnter={(e) =>
-                (e.currentTarget.style.filter = "brightness(85%)")
-              }
-              onMouseLeave={(e) =>
-                (e.currentTarget.style.filter = "brightness(100%)")
-              }
-            >
-              <img src={ducks6} alt="duck card" style={{ width: "100%", height: "200px" }} />
-              <div style={{ padding: "8px" }}>
-                <h4 style={{ margin: 0 }}>Intro to SQL</h4>
-                <p
-                  style={{
-                    margin: "4px 0 0",
-                    fontFamily: "RionaSansMedium",
-                    fontSize: "0.9rem",
-                    color: "white",
-                  }}
-                >
-                  quack quack quack
-                </p>
-              </div>
-            </div>
+        {/* Intro to Python */}
+        <a
+          href="https://github.com/Statistics-and-Data-Science-SMU/SADS-Tutorials/tree/main/Intro%20to%20Python"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            width: "200px",
+            overflow: "hidden",
+            textAlign: "center",
+            backgroundColor: "#404040",
+            color: "white",
+            textDecoration: "none",
+          }}
+          onMouseEnter={(e) =>
+            (e.currentTarget.style.filter = "brightness(85%)")
+          }
+          onMouseLeave={(e) =>
+            (e.currentTarget.style.filter = "brightness(100%)")
           }
         >
-          <h2 style={{ fontFamily: "RionaSansBlack" }}>Lucky</h2>
-          <p style={{ fontFamily: "RionaSansMedium", fontSize: "15px" }}>
-            Duck major
-          </p>
-          <img src={ducks6} style={{ width: "300px" }} alt="inside modal" />
-        </Modal>
+          <img
+            src={python}
+            alt="Intro to Python"
+            style={{ width: "100%", height: "200px" }}
+          />
+          <div style={{ padding: "8px" }}>
+            <h4 style={{ margin: 0 }}>Intro to Python</h4>
+          </div>
+        </a>
 
-        {/* Bubbles */}
-        <Modal
-          trigger={
-            <div
-              style={{
-                width: "200px",
-                overflow: "hidden",
-                textAlign: "center",
-                backgroundColor: "#404040",
-                color: "white",
-              }}
-              onMouseEnter={(e) =>
-                (e.currentTarget.style.filter = "brightness(85%)")
-              }
-              onMouseLeave={(e) =>
-                (e.currentTarget.style.filter = "brightness(100%)")
-              }
-            >
-              <img src={ducks7} alt="duck card" style={{ width: "100%", height: "200px"  }} />
-              <div style={{ padding: "8px" }}>
-                <h4 style={{ margin: 0 }}>Intro to Python</h4>
-                <p
-                  style={{
-                    margin: "4px 0 0",
-                    fontFamily: "RionaSansMedium",
-                    fontSize: "0.9rem",
-                    color: "white",
-                  }}
-                >
-                  Python Python Python
-                </p>
-              </div>
-            </div>
+        {/* Intro to SQL */}
+        <a
+          href="https://github.com/Statistics-and-Data-Science-SMU/SADS-Tutorials/tree/main/Intro%20to%20SQL"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            width: "200px",
+            overflow: "hidden",
+            textAlign: "center",
+            backgroundColor: "#404040",
+            color: "white",
+            textDecoration: "none",
+          }}
+          onMouseEnter={(e) =>
+            (e.currentTarget.style.filter = "brightness(85%)")
+          }
+          onMouseLeave={(e) =>
+            (e.currentTarget.style.filter = "brightness(100%)")
           }
         >
-          <h2 style={{ fontFamily: "RionaSansBlack" }}>Bubbles</h2>
-          <p style={{ fontFamily: "RionaSansMedium", fontSize: "15px" }}>
-            Duck major
-          </p>
-          <img src={ducks7} style={{ width: "300px", height: "300px"  }} alt="inside modal" />
-        </Modal>
+          <img
+            src={sql}
+            alt="Intro to SQL"
+            style={{ width: "100%", height: "200px" }}
+          />
+          <div style={{ padding: "8px" }}>
+            <h4 style={{ margin: 0 }}>Intro to SQL</h4>
+          </div>
+        </a>
 
-        {/* Fluffy */}
-        <Modal
-          trigger={
-            <div
-              style={{
-                width: "200px",
-                overflow: "hidden",
-                textAlign: "center",
-                backgroundColor: "#404040",
-                color: "white",
-              }}
-              onMouseEnter={(e) =>
-                (e.currentTarget.style.filter = "brightness(85%)")
-              }
-              onMouseLeave={(e) =>
-                (e.currentTarget.style.filter = "brightness(100%)")
-              }
-            >
-              <img src={ducks8} alt="duck card" style={{ width: "100%", height: "200px"  }} />
-              <div style={{ padding: "8px" }}>
-                <h4 style={{ margin: 0 }}>Excel</h4>
-                <p
-                  style={{
-                    margin: "4px 0 0",
-                    fontFamily: "RionaSansMedium",
-                    fontSize: "0.9rem",
-                    color: "white",
-                  }}
-                >
-                  Something or other
-                </p>
-              </div>
-            </div>
+        {/* Intro to Tableau */}
+        <a
+          href="https://github.com/Statistics-and-Data-Science-SMU/SADS-Tutorials/tree/main/Intro%20to%20Tableau"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            width: "200px",
+            overflow: "hidden",
+            textAlign: "center",
+            backgroundColor: "#404040",
+            color: "white",
+            textDecoration: "none",
+          }}
+          onMouseEnter={(e) =>
+            (e.currentTarget.style.filter = "brightness(85%)")
+          }
+          onMouseLeave={(e) =>
+            (e.currentTarget.style.filter = "brightness(100%)")
           }
         >
-          <h2 style={{ fontFamily: "RionaSansBlack" }}>Fluffy</h2>
-          <p style={{ fontFamily: "RionaSansMedium", fontSize: "15px" }}>
-            Duck major
-          </p>
-          <img src={ducks8} style={{ width: "300px",  }} alt="inside modal" />
-        </Modal>
+          <img
+            src={tableau}
+            alt="Intro to Tableau"
+            style={{ width: "100%", height: "200px" }}
+          />
+          <div style={{ padding: "8px" }}>
+            <h4 style={{ margin: 0 }}>Intro to Tableau</h4>
+          </div>
+        </a>
       </div>
 
       <br />

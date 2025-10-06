@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Banner from "./components/Banner";
-import ducks6 from "./assets/images/ducks6.png";
+import ducks6 from "./assets/images/ducks.jpg";
 import logo from "./assets/images/sads_logo2.png";
 import banner from "./assets/images/sadsbanner.mp4";
 import Navbar from "./components/navbar.jsx";
@@ -68,7 +68,7 @@ const Home = () => {
       <br />
       <div id="about" className="aboutsection">
   <div className="aboutcontent">
-  <div className="abouttext">SADS is a club at SMU. SADS is a club at SMU. SADS is a club at SMU. SADS is a club at SMU. quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack quack
+  <div className="abouttext">The Statistics and Data Science (SADS) Club at SMU is a community for students eager to strengthen their technical skills, explore real-world applications of data, and connect with peers who share similar interests. Through workshops, events, and mentorship, members receive personalized guidance on building and refining their portfolios, preparing them for opportunities in academia, industry, and beyond. Whether you’re just getting started or already experienced in data science, SADS offers a supportive environment to learn, grow, and network.
     <br/><br/><a href="#/meettheteam">Meet the team →</a>
   </div>
   <div className="aboutimage">
