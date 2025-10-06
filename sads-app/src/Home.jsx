@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Banner from "./components/Banner";
-import ducks6 from "./assets/images/ducks.jpg";
+import about from "./assets/images/about.png";
 import logo from "./assets/images/sads_logo2.png";
 import banner from "./assets/images/sadsbanner.mp4";
 import Navbar from "./components/navbar.jsx";
@@ -72,7 +72,7 @@ const Home = () => {
     <br/><br/><a href="#/meettheteam">Meet the team →</a>
   </div>
   <div className="aboutimage">
-  <img src={ducks6}></img>
+  <img src={about}></img>
   </div>
   </div>
 </div>
