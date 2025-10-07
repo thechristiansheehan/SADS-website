@@ -281,5 +281,7 @@ code {
   padding-right: 0px;
 }
 
-
+.aboutimage img {
+  width:90vw;
+}
 }
