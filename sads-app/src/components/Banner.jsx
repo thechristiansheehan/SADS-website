@@ -4,7 +4,7 @@ import one from '../assets/images/one.png';
 import two from '../assets/images/two.png';
 
 import '@splidejs/react-splide/css';
-import './Banner.css'; // ✅ new stylesheet
+import './Banner.css';
 
 const Banner = () => {
   return (

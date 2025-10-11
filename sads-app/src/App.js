@@ -8,6 +8,7 @@ import About from "./About.jsx";
 import Calendar from "./Calendar.jsx";
 import Resources from "./Resources.jsx";
 import MeetTheTeam from "./meettheteam.jsx";
+import ScrollToTop from './ScrollToTop.jsx';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       }}
     >
       <Router>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/calendar" element={<Calendar />} />

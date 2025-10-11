@@ -5,6 +5,7 @@
   position: relative;
   width: 100%;
   overflow: hidden;
+  margin-bottom:10px;
 }
 
 .banner-video {
@@ -73,7 +74,9 @@ html {
   font-size: 1.5rem;
   margin-top:20px;
 }
-
+.banner-container {
+  margin-bottom:0px;
+}
 
 .banner-links {
   display: contents;

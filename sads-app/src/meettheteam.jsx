@@ -34,7 +34,7 @@ const MeetTheTeam = () => {
             President <br/>
             Data Science BS, Computer Science BS, Statistics BS (Math and Business Minors)<br/>
             Undergrad Senior (Graduating 2026) and First Year Grad<br/><br/>
-            <a style={{fontSize:"30px", color:"white"}}title="LinkedIn" target="_blank" href="https://www.linkedin.com/in/nia-savova-6b4108296"><i class="fa fa-linkedin"></i></a>
+            <a class="header-link" style={{fontSize:"30px", color:"white"}}title="LinkedIn" target="_blank" href="https://www.linkedin.com/in/nia-savova-6b4108296"><i class="fa fa-linkedin"></i></a>
           </p>
           <img src={nia} style={{ width: "250px" }} alt="inside modal" />
         </Modal>

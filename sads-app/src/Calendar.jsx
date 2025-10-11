@@ -96,9 +96,9 @@ const Calendar = () => {
 
       {/* Header with arrows */}
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-        <button onClick={goPrevMonth} className="arrow-btn">⏴</button>
+        <button onClick={goPrevMonth} className="arrow-btn"><i class="fa-solid fa-arrow-left"></i></button>
         <h2>{displayDate.toLocaleString("default", { month: "long" })} {year}</h2>
-        <button onClick={goNextMonth} className="arrow-btn">⏵</button>
+        <button onClick={goNextMonth} className="arrow-btn"><i class="fa-solid fa-arrow-right"></i></button>
       </div>
 
       {/* Days of week */}
