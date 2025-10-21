@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import Banner from "./components/Banner";
-import about from "https://sadseditor-production.up.railway.app/uploads/about.jpg";
 import logo from "./assets/images/sads_logo2.png";
 import banner from "./assets/images/sadsbanner.mp4";
 import Navbar from "./components/navbar.jsx";
@@ -72,7 +71,7 @@ const Home = () => {
     <br/><br/><a href="#/meettheteam">Meet the team →</a>
   </div>
   <div className="aboutimage">
-  <img src={about}></img>
+  <img src="https://sadseditor-production.up.railway.app/uploads/about.jpg"></img>
   </div>
   </div>
 </div>
