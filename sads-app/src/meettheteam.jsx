@@ -1,13 +1,13 @@
 import Modal from "./components/Modal.jsx";
-import nia from "./assets/images/nia.jpeg";
-import sarah from "./assets/images/sarah.png";
-import margaret from "./assets/images/margaret.jpg";
-import radha from "./assets/images/radha.jpg";
-import hillary from "./assets/images/hillary.jpg";
-import ameen from "./assets/images/ameen.jpg";
+import nia from "https://sadseditor-production.up.railway.app/uploads/nia.jpg";
+import sarah from "https://sadseditor-production.up.railway.app/uploads/sarah.jpg";
+import margaret from "https://sadseditor-production.up.railway.app/uploads/mara.jpg";
+import radha from "https://sadseditor-production.up.railway.app/uploads/radha.jpg";
+import hillary from "https://sadseditor-production.up.railway.app/uploads/hillary.jpg";
+import ameen from "https://sadseditor-production.up.railway.app/uploads/ameen.jpg";
 import NavBar from "./components/navbar.jsx";
 import "./Home.css";
-import christian from "./assets/images/christian.jpg";
+import christian from "https://sadseditor-production.up.railway.app/uploads/christian.jpg";
 
 const MeetTheTeam = () => {
   return (
