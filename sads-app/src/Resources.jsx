@@ -24,7 +24,7 @@ const Resources = () => {
       >
                 {/* Model Building */}
         <a
-          href="https://drive.google.com/file/d/1ioBc5qQkegoC03bf60aTzk8005Nnvcfd/view?usp=sharing"
+          href="https://colab.research.google.com/drive/1_D2FFxz6UU2nIq3BMr64KekyGW6cy1yd?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
           style={{
