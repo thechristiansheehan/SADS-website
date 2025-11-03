@@ -5,6 +5,7 @@ import tableau from "./assets/images/tableau.png";
 import NavBar from "./components/navbar.jsx";
 import "./Home.css";
 import datavis from "./assets/images/datavis.jpg"
+import mb from "./assets/images/modelbuilding.png"
 
 const Resources = () => {
   return (
@@ -21,6 +22,35 @@ const Resources = () => {
           justifyContent: "center",
         }}
       >
+                {/* Model Building */}
+        <a
+          href="https://drive.google.com/file/d/1ioBc5qQkegoC03bf60aTzk8005Nnvcfd/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            width: "200px",
+            overflow: "hidden",
+            textAlign: "center",
+            backgroundColor: "#404040",
+            color: "white",
+            textDecoration: "none",
+          }}
+          onMouseEnter={(e) =>
+            (e.currentTarget.style.filter = "brightness(85%)")
+          }
+          onMouseLeave={(e) =>
+            (e.currentTarget.style.filter = "brightness(100%)")
+          }
+        >
+          <img
+            src={mb}
+            alt="Intro to Python Data Analysis and Visualization"
+            style={{ width: "100%", height: "200px" }}
+          />
+          <div style={{ padding: "8px" }}>
+            <h4 style={{ margin: 0 }}>Model Building</h4>
+          </div>
+        </a>
 
                 {/* Intro to Python Data Visualization */}
         <a
