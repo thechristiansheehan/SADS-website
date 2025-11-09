@@ -7,6 +7,7 @@ import Home from "./Home.jsx";
 import Calendar from "./Calendar.jsx";
 import Resources from "./Resources.jsx";
 import MeetTheTeam from "./meettheteam.jsx";
+import Public from ".PublicGallery.js"
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/calendar" element={<Calendar />} />
           <Route path="/resources" element={<Resources />} />
           <Route path="/meettheteam" element={<MeetTheTeam />} />
+          <Route path="/public" element={<Public />} />
         </Routes>
       </Router>
 
