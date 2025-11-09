@@ -1,25 +1,21 @@
 {
   "files": {
     "main.css": "/static/css/main.93a22877.css",
-    "main.js": "/static/js/main.176d3d12.js",
+    "main.js": "/static/js/main.98c03a69.js",
     "static/js/453.f3a76751.chunk.js": "/static/js/453.f3a76751.chunk.js",
     "static/media/sadsbanner.mp4": "/static/media/sadsbanner.6c92f96882cfa30e727b.mp4",
     "static/media/sads_logo_cropped.png": "/static/media/sads_logo_cropped.57beca7b0ba07ba470dd.png",
-    "static/media/python.png": "/static/media/python.86c38092a09ff78968c7.png",
     "static/media/RionaSansBlack.ttf": "/static/media/RionaSansBlack.9c828bdca7a8fc2e6442.ttf",
-    "static/media/datavis.jpg": "/static/media/datavis.6e654732b2d930f17c52.jpg",
     "static/media/sads_logo.png": "/static/media/sads_logo.88d07e896311a6f9aa80.png",
     "static/media/sads_logo2.png": "/static/media/sads_logo2.704bd900ea86f7478bcd.png",
-    "static/media/excel.png": "/static/media/excel.bbbfae833e2281497cf9.png",
     "static/media/RionaSansMedium.ttf": "/static/media/RionaSansMedium.fd9a7a5e929804760f3e.ttf",
-    "static/media/sql.png": "/static/media/sql.5852cf2f3c9844e64c28.png",
     "index.html": "/index.html",
     "main.93a22877.css.map": "/static/css/main.93a22877.css.map",
-    "main.176d3d12.js.map": "/static/js/main.176d3d12.js.map",
+    "main.98c03a69.js.map": "/static/js/main.98c03a69.js.map",
     "453.f3a76751.chunk.js.map": "/static/js/453.f3a76751.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.93a22877.css",
-    "static/js/main.176d3d12.js"
+    "static/js/main.98c03a69.js"
   ]
 }
