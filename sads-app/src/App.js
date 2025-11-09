@@ -7,7 +7,6 @@ import Home from "./Home.jsx";
 import Calendar from "./Calendar.jsx";
 import Resources from "./Resources.jsx";
 import MeetTheTeam from "./meettheteam.jsx";
-import Public from ".PublicGallery.js"
 
 function App() {
   return (
