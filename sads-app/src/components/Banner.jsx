@@ -8,9 +8,9 @@ const Banner = () => {
 
   // Image URLs
   const imageUrls = [
-    'https://sadseditor-production.up.railway.app/uploads/banner1.jpg',
-    'https://sadseditor-production.up.railway.app/uploads/banner2.jpg',
-    'https://sadseditor-production.up.railway.app/uploads/banner3.jpg',
+    'https://newsadseditor-production.up.railway.app/uploads/banner1.jpg',
+    'https://newsadseditor-production.up.railway.app/uploads/banner2.jpg',
+    'https://newsadseditor-production.up.railway.app/uploads/banner3.jpg',
   ];
 
   useEffect(() => {
