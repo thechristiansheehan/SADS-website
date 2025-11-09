@@ -19,6 +19,7 @@ const Resources = () => {
       
       <div style={{ marginTop: "80px" }}></div>
 <Gallery images={images} showDelete={false} publicView={true} />
+<div style={{ marginTop: "30px" }}></div>
     </div>
   );
 };
