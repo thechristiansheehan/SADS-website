@@ -23,7 +23,6 @@ function App() {
           <Route path="/calendar" element={<Calendar />} />
           <Route path="/resources" element={<Resources />} />
           <Route path="/meettheteam" element={<MeetTheTeam />} />
-          <Route path="/public" element={<Public />} />
         </Routes>
       </Router>
 
