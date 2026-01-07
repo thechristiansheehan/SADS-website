@@ -61,7 +61,7 @@ function Gallery({
               }
             >
               <img
-                src={`https://newsadseditor-production.up.railway.app/uploads/${img.filename}`}
+                src={`https://storage.googleapis.com/messagesapi/${img.filename}`}
                 alt={img.originalName}
                 style={{
                   width: "100%",
