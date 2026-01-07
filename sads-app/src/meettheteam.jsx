@@ -10,7 +10,7 @@ return ( <div> <NavBar /> <title>Meet The Team</title>
     <Modal
       trigger={
         <div className="team-card">
-          <img src="https://newsadseditor-production.up.railway.app/uploads/banners/nia.jpg" alt="Nia Savova" className="team-img" />
+          <img src="https://storage.googleapis.com/messagesapi/banner/nia.jpg" alt="Nia Savova" className="team-img" />
           <div style={{ padding: "8px" }}>
             <h4 style={{ margin: 0 }}>Nia Savova</h4>
             <p className="team-role">President</p>
@@ -25,14 +25,14 @@ return ( <div> <NavBar /> <title>Meet The Team</title>
         Undergrad Senior (Graduating 2026) and First Year Grad<br/><br/>
         <a className="header-link" style={{fontSize:"30px", color:"white"}} title="LinkedIn" target="_blank" href="https://www.linkedin.com/in/nia-savova-6b4108296"><i className="fa fa-linkedin"></i></a>
       </p>
-      <img src="https://newsadseditor-production.up.railway.app/uploads/banners/nia.jpg" style={{ width: "250px" }} alt="inside modal" />
+      <img src="https://storage.googleapis.com/messagesapi/banner/nia.jpg" style={{ width: "250px" }} alt="inside modal" />
     </Modal>
 
     {/* Sarah */}
     <Modal
       trigger={
         <div className="team-card">
-          <img src="https://newsadseditor-production.up.railway.app/uploads/banners/sarah.jpg" alt="Sarah Mendoza" className="team-img" />
+          <img src="https://storage.googleapis.com/messagesapi/banner/sarah.jpg" alt="Sarah Mendoza" className="team-img" />
           <div style={{ padding: "8px" }}>
             <h4 style={{ margin: 0 }}>Sarah Mendoza</h4>
             <p className="team-role">Vice President</p>
@@ -46,14 +46,14 @@ return ( <div> <NavBar /> <title>Meet The Team</title>
         Computer Science, Data Science<br />
         Undergrad Senior (Graduating 2026)<br />
       </p>
-      <img src="https://newsadseditor-production.up.railway.app/uploads/banners/sarah.jpg" style={{ width: "300px" }} alt="inside modal" />
+      <img src="https://storage.googleapis.com/messagesapi/banner/sarah.jpg" style={{ width: "300px" }} alt="inside modal" />
     </Modal>
 
     {/* Margaret */}
     <Modal
       trigger={
         <div className="team-card">
-          <img src="https://newsadseditor-production.up.railway.app/uploads/banners/mara.jpg" alt="Margaret Alt" className="team-img" />
+          <img src="https://storage.googleapis.com/messagesapi/banner/mara.jpg" alt="Margaret Alt" className="team-img" />
           <div style={{ padding: "8px" }}>
             <h4 style={{ margin: 0 }}>Margaret Alt</h4>
             <p className="team-role">Lead Project Manager</p>
@@ -67,14 +67,14 @@ return ( <div> <NavBar /> <title>Meet The Team</title>
         Statistics, Political Science<br />
         Undergrad Senior (Graduating 2026)<br />
       </p>
-      <img src="https://newsadseditor-production.up.railway.app/uploads/banners/mara.jpg" style={{ width: "300px", height: "300px" }} alt="inside modal" />
+      <img src="https://storage.googleapis.com/messagesapi/banner/mara.jpg" style={{ width: "300px", height: "300px" }} alt="inside modal" />
     </Modal>
 
     {/* Hillary */}
     <Modal
       trigger={
         <div className="team-card">
-          <img src="https://newsadseditor-production.up.railway.app/uploads/banners/hillary.jpg" alt="Hillary Bhuiyan" className="team-img" />
+          <img src="https://storage.googleapis.com/messagesapi/banner/hillary.jpg" alt="Hillary Bhuiyan" className="team-img" />
           <div style={{ padding: "8px" }}>
             <h4 style={{ margin: 0 }}>Hillary Bhuiyan</h4>
             <p className="team-role">Treasurer</p>
@@ -88,14 +88,14 @@ return ( <div> <NavBar /> <title>Meet The Team</title>
         Financial Economics, Statistics<br/>
         Undergrad Junior (Graduating 2027)<br/>
       </p>
-      <img src="https://newsadseditor-production.up.railway.app/uploads/banners/hillary.jpg" style={{ width: "300px" }} alt="inside modal" />
+      <img src="https://storage.googleapis.com/messagesapi/banner/hillary.jpg" style={{ width: "300px" }} alt="inside modal" />
     </Modal>
 
     {/* Radha */}
     <Modal
       trigger={
         <div className="team-card">
-          <img src="https://newsadseditor-production.up.railway.app/uploads/banners/radha.jpg" alt="Radha Chitgopkar" className="team-img" />
+          <img src="https://storage.googleapis.com/messagesapi/banner/radha.jpg" alt="Radha Chitgopkar" className="team-img" />
           <div style={{ padding: "8px" }}>
             <h4 style={{ margin: 0 }}>Radha Chitgopkar</h4>
             <p className="team-role">Marketing</p>
@@ -109,14 +109,14 @@ return ( <div> <NavBar /> <title>Meet The Team</title>
         Operations Research, Data Science<br/>
         Undergrad Senior (Graduating 2026)<br/>
       </p>
-      <img src="https://newsadseditor-production.up.railway.app/uploads/banners/radha.jpg" style={{ width: "300px" }} alt="inside modal" />
+      <img src="https://storage.googleapis.com/messagesapi/banner/radha.jpg" style={{ width: "300px" }} alt="inside modal" />
     </Modal>
 
     {/* Christian */}
     <Modal
       trigger={
         <div className="team-card">
-          <img src="https://newsadseditor-production.up.railway.app/uploads/banners/christian.jpg" alt="Christian Sheehan" className="team-img" />
+          <img src="https://storage.googleapis.com/messagesapi/banner/christian.jpg" alt="Christian Sheehan" className="team-img" />
           <div style={{ padding: "8px" }}>
             <h4 style={{ margin: 0 }}>Christian Sheehan</h4>
             <p className="team-role">Outreach</p>
@@ -130,14 +130,14 @@ return ( <div> <NavBar /> <title>Meet The Team</title>
         Computer Science, Data Science<br/>
         Undergrad Sophomore (Graduating 2028)<br/>
       </p>
-      <img src="https://newsadseditor-production.up.railway.app/uploads/banners/christian.jpg" style={{ width: "300px" }} alt="inside modal" />
+      <img src="https://storage.googleapis.com/messagesapi/banner/christian.jpg" style={{ width: "300px" }} alt="inside modal" />
     </Modal>
 
     {/* Ameen */}
     <Modal
       trigger={
         <div className="team-card">
-          <img src="https://newsadseditor-production.up.railway.app/uploads/banners/ameen.jpg" alt="Ameen Zia" className="team-img" />
+          <img src="https://storage.googleapis.com/messagesapi/banner/ameen.jpg" alt="Ameen Zia" className="team-img" />
           <div style={{ padding: "8px" }}>
             <h4 style={{ margin: 0 }}>Ameen Zia</h4>
             <p className="team-role">Program Coordinator</p>
@@ -151,7 +151,7 @@ return ( <div> <NavBar /> <title>Meet The Team</title>
         Computer Engineering, Mathematics<br />
         Undergrad Junior (Graduating 2027)<br />
       </p>
-      <img src="https://newsadseditor-production.up.railway.app/uploads/banners/ameen.jpg" style={{ width: "300px" }} alt="inside modal" />
+      <img src="https://storage.googleapis.com/messagesapi/banner/ameen.jpg" style={{ width: "300px" }} alt="inside modal" />
     </Modal>
   </div>
 

@@ -7,7 +7,7 @@ const Resources = () => {
     const [images, setImages] = useState([]);
   
     useEffect(() => {
-      fetch("https://newsadseditor-production.up.railway.app/images")
+      fetch("https://sadsapi-616938642091.europe-west1.run.app/images")
         .then((res) => res.json())
         .then((data) => setImages(data.images))
         .catch((err) => console.error(err));

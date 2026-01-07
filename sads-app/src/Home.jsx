@@ -71,7 +71,7 @@ const Home = () => {
     <br/><br/><a href="/#/meettheteam">Meet the team →</a>
   </div>
   <div className="aboutimage">
-  <img src="https://newsadseditor-production.up.railway.app/uploads/banners/about.jpg"></img>
+  <img src="https://storage.googleapis.com/messagesapi/banner/about.jpg"></img>
   </div>
   </div>
 </div>
