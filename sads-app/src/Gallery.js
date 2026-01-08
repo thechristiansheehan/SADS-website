@@ -42,7 +42,7 @@ function Gallery({
   // If images is explicitly null or empty, show a friendly message
   if (!images || orderedImages.length === 0) {
     return (
-      <div style={{ textAlign: "center", padding: "40px", color: "#aaa", fontSize: "1.4rem" }}>
+      <div style={{ textAlign: "center", padding: "40px", color: "#aaa", fontSize: "1.2rem" }}>
         Loading...
       </div>
     );
