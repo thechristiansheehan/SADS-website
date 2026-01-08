@@ -9,7 +9,7 @@ const Footer = () => {
   <img width = "125px" src={logo}></img>
     <br></br>
     <br></br>
-    © 2025 Statistics and Data Science Club at SMU
+    © 2026 Statistics and Data Science Club at SMU
     <br></br>
     <br></br>
     <div class="footer-links">
