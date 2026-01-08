@@ -33,7 +33,7 @@ function Gallery({
   // Show loading state if explicitly passed or if images are not yet available
   if (loading || (!images && images !== null)) {
     return (
-      <div style={{ textAlign: "center", padding: "40px", color: "#aaa", fontSize: "40px" }}>
+      <div style={{ textAlign: "center", padding: "40px", color: "#aaa" }}>
         Loading...
       </div>
     );
@@ -42,7 +42,7 @@ function Gallery({
   // If images is explicitly null or empty, show a friendly message
   if (!images || orderedImages.length === 0) {
     return (
-      <div style={{ textAlign: "center", padding: "40px", color: "#aaa" }}>
+      <div style={{ textAlign: "center", padding: "40px", color: "#aaa", fontSize: "1.4rem" }}>
         Loading...
       </div>
     );
