@@ -17,6 +17,8 @@ function Gallery({
         justifyContent: "center",
         gap: "20px",
         marginTop: "20px",
+        marginLeft: "30px",
+        marginRight: "30px",
       }
     : {
         display: "flex",

@@ -1,164 +1,214 @@
-import Modal from "./components/Modal.jsx";
 import NavBar from "./components/navbar.jsx";
 import "./Home.css";
+import React, { useEffect, useState } from "react";
+import Members from "./Members.js";
+import "./fonts.css";
 
 const MeetTheTeam = () => {
-return ( <div> <NavBar /> <title>Meet The Team</title>
-<div style={{ marginTop: "80px" }}></div>
-  <div className="team-grid">
-    {/* Nia */}
-    <Modal
-      trigger={
-        <div className="team-card">
-          <img src="https://storage.googleapis.com/messagesapi/banner/nia.jpg" alt="Nia Savova" className="team-img" />
-          <div style={{ padding: "8px" }}>
-            <h4 style={{ margin: 0 }}>Nia Savova</h4>
-            <p className="team-role">President</p>
-          </div>
-        </div>
-      }
-    >
-      <h2 style={{ fontFamily: "RionaSansBlack" }}>Nia Savova</h2>
-      <p style={{ fontFamily: "RionaSansMedium", fontSize: "15px" }}>
-        President <br/>
-        Data Science BS, Computer Science BS, Statistics BS (Math and Business Minors)<br/>
-        Undergrad Senior (Graduating 2026) and First Year Grad<br/><br/>
-        <a className="header-link" style={{fontSize:"30px", color:"white"}} title="LinkedIn" target="_blank" href="https://www.linkedin.com/in/nia-savova-6b4108296"><i className="fa fa-linkedin"></i></a>
-      </p>
-      <img src="https://storage.googleapis.com/messagesapi/banner/nia.jpg" style={{ width: "250px" }} alt="inside modal" />
-    </Modal>
+    const [images2, setImages2] = useState([]);
+    const [images3, setImages3] = useState([]);
+      const [modalOpen, setModalOpen] = useState(false);
+  const [modalData, setModalData] = useState(null);
 
-    {/* Sarah */}
-    <Modal
-      trigger={
-        <div className="team-card">
-          <img src="https://storage.googleapis.com/messagesapi/banner/sarah.jpg" alt="Sarah Mendoza" className="team-img" />
-          <div style={{ padding: "8px" }}>
-            <h4 style={{ margin: 0 }}>Sarah Mendoza</h4>
-            <p className="team-role">Vice President</p>
-          </div>
-        </div>
-      }
-    >
-      <h2 style={{ fontFamily: "RionaSansBlack" }}>Sarah Mendoza</h2>
-      <p style={{ fontFamily: "RionaSansMedium", fontSize: "15px" }}>
-        Vice President<br/>
-        Computer Science, Data Science<br />
-        Undergrad Senior (Graduating 2026)<br />
-      </p>
-      <img src="https://storage.googleapis.com/messagesapi/banner/sarah.jpg" style={{ width: "300px" }} alt="inside modal" />
-    </Modal>
+  // styling modal
+  const overlayStyle = {
+  position: "fixed",
+  top: 0,
+  left: 0,
+  width: "100vw",
+  height: "100vh",
+  background: "rgba(0, 0, 0, 0.6)",
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  zIndex: 9999,
+};
 
-    {/* Margaret */}
-    <Modal
-      trigger={
-        <div className="team-card">
-          <img src="https://storage.googleapis.com/messagesapi/banner/mara.jpg" alt="Margaret Alt" className="team-img" />
-          <div style={{ padding: "8px" }}>
-            <h4 style={{ margin: 0 }}>Margaret Alt</h4>
-            <p className="team-role">Lead Project Manager</p>
-          </div>
-        </div>
-      }
-    >
-      <h2 style={{ fontFamily: "RionaSansBlack" }}>Margaret Alt</h2>
-      <p style={{ fontFamily: "RionaSansMedium", fontSize: "15px" }}>
-        Lead Project Manager<br/>
-        Statistics, Political Science<br />
-        Undergrad Senior (Graduating 2026)<br />
-      </p>
-      <img src="https://storage.googleapis.com/messagesapi/banner/mara.jpg" style={{ width: "300px", height: "300px" }} alt="inside modal" />
-    </Modal>
+const modalStyle = {
+  position: "relative",   // Needed for absolute close button
+  background: "#404040",
+  padding: "25px",
+  width: "90%",
+  maxWidth: "450px",
+  color: "white",
+  marginBottom:'50px',
+};
 
-    {/* Hillary */}
-    <Modal
-      trigger={
-        <div className="team-card">
-          <img src="https://storage.googleapis.com/messagesapi/banner/hillary.jpg" alt="Hillary Bhuiyan" className="team-img" />
-          <div style={{ padding: "8px" }}>
-            <h4 style={{ margin: 0 }}>Hillary Bhuiyan</h4>
-            <p className="team-role">Treasurer</p>
-          </div>
-        </div>
-      }
-    >
-      <h2 style={{ fontFamily: "RionaSansBlack" }}>Hillary Bhuiyan</h2>
-      <p style={{ fontFamily: "RionaSansMedium", fontSize: "15px" }}>
-        Treasurer<br/>
-        Financial Economics, Statistics<br/>
-        Undergrad Junior (Graduating 2027)<br/>
-      </p>
-      <img src="https://storage.googleapis.com/messagesapi/banner/hillary.jpg" style={{ width: "300px" }} alt="inside modal" />
-    </Modal>
 
-    {/* Radha */}
-    <Modal
-      trigger={
-        <div className="team-card">
-          <img src="https://storage.googleapis.com/messagesapi/banner/radha.jpg" alt="Radha Chitgopkar" className="team-img" />
-          <div style={{ padding: "8px" }}>
-            <h4 style={{ margin: 0 }}>Radha Chitgopkar</h4>
-            <p className="team-role">Marketing</p>
-          </div>
-        </div>
-      }
-    >
-      <h2 style={{ fontFamily: "RionaSansBlack" }}>Radha Chitgopkar</h2>
-      <p style={{ fontFamily: "RionaSansMedium", fontSize: "15px" }}>
-        Marketing<br/>
-        Operations Research, Data Science<br/>
-        Undergrad Senior (Graduating 2026)<br/>
-      </p>
-      <img src="https://storage.googleapis.com/messagesapi/banner/radha.jpg" style={{ width: "300px" }} alt="inside modal" />
-    </Modal>
+const titleStyle = {
+  marginTop: 0,
+  marginBottom: "0px",
+  fontSize: "1.3rem",
+  fontWeight: "bold",
+  textAlign: "center",
+};
 
-    {/* Christian */}
-    <Modal
-      trigger={
-        <div className="team-card">
-          <img src="https://storage.googleapis.com/messagesapi/banner/christian.jpg" alt="Christian Sheehan" className="team-img" />
-          <div style={{ padding: "8px" }}>
-            <h4 style={{ margin: 0 }}>Christian Sheehan</h4>
-            <p className="team-role">Outreach</p>
-          </div>
-        </div>
-      }
-    >
-      <h2 style={{ fontFamily: "RionaSansBlack" }}>Christian Sheehan</h2>
-      <p style={{ fontFamily: "RionaSansMedium", fontSize: "15px" }}>
-        Outreach<br/>
-        Computer Science, Data Science<br/>
-        Undergrad Sophomore (Graduating 2028)<br/>
-      </p>
-      <img src="https://storage.googleapis.com/messagesapi/banner/christian.jpg" style={{ width: "300px" }} alt="inside modal" />
-    </Modal>
+const closeIconWrapper = {
+  position: "absolute",
+  top: "0px",
+  right: "12px",
+  fontSize: "2rem",
+  cursor: "pointer",
+  color: "white",
+  userSelect: "none",
+};
 
-    {/* Ameen */}
-    <Modal
-      trigger={
-        <div className="team-card">
-          <img src="https://storage.googleapis.com/messagesapi/banner/ameen.jpg" alt="Ameen Zia" className="team-img" />
-          <div style={{ padding: "8px" }}>
-            <h4 style={{ margin: 0 }}>Ameen Zia</h4>
-            <p className="team-role">Program Coordinator</p>
-          </div>
-        </div>
-      }
-    >
-      <h2 style={{ fontFamily: "RionaSansBlack" }}>Ameen Zia</h2>
-      <p style={{ fontFamily: "RionaSansMedium", fontSize: "15px" }}>
-        Program Coordinator<br/>
-        Computer Engineering, Mathematics<br />
-        Undergrad Junior (Graduating 2027)<br />
-      </p>
-      <img src="https://storage.googleapis.com/messagesapi/banner/ameen.jpg" style={{ width: "300px" }} alt="inside modal" />
-    </Modal>
-  </div>
+const iconRow = {
+  display: "flex",
+  justifyContent: "center",
+  gap: "30px",
+};
 
-  <br />
+const iconHoverStyle = {
+  fontSize: "2rem",
+  color: "white",
+  textDecoration: "none",
+  cursor: "pointer",
+  marginTop: '15px',
+};
+  
+    useEffect(() => {
+      fetch("https://sadsapi-616938642091.europe-west1.run.app/team")
+        .then((res) => res.json())
+        .then((data) => setImages2(data.images))
+        .catch((err) => console.error(err));
+    }, []);
+
+        useEffect(() => {
+      fetch("https://sadsapi-616938642091.europe-west1.run.app/inactiveteam")
+        .then((res) => res.json())
+        .then((data) => setImages3(data.images))
+        .catch((err) => console.error(err));
+    }, []);
+  return (
+    <div>
+      <NavBar />
+      <title>Resources</title>
+       <div style={{ marginTop: "80px" }}></div>
+      {images3 && images3.length > 0 && (
+  <h2
+  style={{
+      fontSize: "1.2rem",
+      margin: "0",
+      fontWeight: "bold",
+      marginTop: "-10px",
+      marginBottom: "20px",
+      color: 'white'
+    }}
+  >
+    Active Members:
+  </h2>
+)}
+     
+            <Members
+              images={images2}
+              showDelete={false}
+              disableLinks={false}
+              modalOpen={modalOpen}
+              setModalOpen={setModalOpen}
+              setModalData={setModalData}
+              showLoading={true}
+              isActive={true}
+              publicView={true}
+            />
+
+{images3 && images3.length > 0 && (
+  <h2
+    style={{
+      fontSize: "1.2rem",
+      margin: "0",
+      fontWeight: "bold",
+      marginTop: "30px",
+      marginBottom: "20px",
+      color: 'white'
+    }}
+  >
+    SADS Graveyard (Inactive Members):
+  </h2>
+)}
+
+            <Members
+              images={images3}
+              showDelete={false}
+              disableLinks={false}
+              modalOpen={modalOpen}
+              setModalOpen={setModalOpen}
+              setModalData={setModalData}
+              showLoading={true}
+              isActive={false}
+              publicView={true}
+            />
+
+            {modalOpen && modalData && (
+  <div style={overlayStyle} onClick={() => setModalOpen(false)}>
+    <div
+      style={modalStyle}
+      onClick={(e) => e.stopPropagation()} // prevent background click closing modal
+    >
+      <div style={closeIconWrapper} onClick={() => setModalOpen(false)}>×</div>
+
+      <h2 style={titleStyle}>{modalData.name} • {modalData.role}</h2>
+      <p style={{fontFamily: "RionaSansMedium", lineHeight: "20px", fontSize:'1rem', marginBottom: '5px', marginTop: "15px", whiteSpace: "pre-line" }}>
+  {modalData.bio}
+</p>
+<div style={iconRow}>
+  {modalData.linkedin && (
+    <a
+  href={modalData.linkedin}
+  target="_blank"
+  rel="noopener noreferrer"
+  style={iconHoverStyle}
+  onMouseEnter={(e) => (e.target.style.opacity = "0.7")}
+  onMouseLeave={(e) => (e.target.style.opacity = "1")}
+>
+  <i className="fa-brands fa-linkedin"></i>
+</a>
+
+  )}
+
+  {modalData.github && (
+ <a
+  href={modalData.github}
+  target="_blank"
+  rel="noopener noreferrer"
+  style={iconHoverStyle}
+  onMouseEnter={(e) => (e.target.style.opacity = "0.7")}
+  onMouseLeave={(e) => (e.target.style.opacity = "1")}
+>
+  <i className="fa-brands fa-github"></i>
+</a>
+  )}
+
+  {modalData.website && (
+  
+<a
+  href={modalData.website}
+  target="_blank"
+  rel="noopener noreferrer"
+  style={iconHoverStyle}
+  onMouseEnter={(e) => (e.target.style.opacity = "0.7")}
+  onMouseLeave={(e) => (e.target.style.opacity = "1")}
+>
+  <i className="fa-solid fa-user"></i>
+</a>
+  )}
 </div>
 
-);
+<img
+                src={`https://storage.googleapis.com/messagesapi/${modalData.filename}`}
+                alt={modalData.originalName}
+                style={{
+                  width: "300px",
+                  objectFit: "cover",
+                  marginTop: '15px',
+                }}
+              />
+    </div>
+  </div>
+)}
+<div style={{ marginTop: "10px" }}></div>
+    </div>
+  );
 };
 
 export default MeetTheTeam;
