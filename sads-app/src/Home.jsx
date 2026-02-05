@@ -10,6 +10,14 @@ import Upcoming from "./UpcomingEvents.jsx"
 
 const Home = () => {
   const [showNav, setShowNav] = useState(false);
+  const [images2, setImages2] = useState([]);
+
+  useEffect(() => {
+    fetch("https://sadsapi-616938642091.europe-west1.run.app/team")
+      .then((res) => res.json())
+      .then((data) => setImages2(data.images))
+      .catch((err) => console.error(err));
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
