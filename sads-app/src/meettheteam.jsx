@@ -83,7 +83,7 @@ const iconHoverStyle = {
   return (
     <div>
       <NavBar />
-      <title>Resources</title>
+      <title>Meet the Team</title>
        <div style={{ marginTop: "80px" }}></div>
       {images3 && images3.length > 0 && (
   <h2

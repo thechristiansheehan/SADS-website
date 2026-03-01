@@ -50,15 +50,15 @@ const Home = () => {
           <img src={logo} alt="header logo" className="banner-logo" />
 
           <div className="banner-links">
-            <HashLink className="header-link" smooth to="/#about">
-    About
+            <HashLink className="header-link" smooth to="/#about">About
   </HashLink>
-            <a href="/#/calendar" className="header-link">
-              Calendar
+            <a href="/#/calendar" className="header-link">Calendar
             </a>
-            <a href="/#/resources" className="header-link">
-              Resources
+            <a href="/#/projects" className="header-link">Projects
             </a>
+            <a href="/#/resources" className="header-link">Resources
+            </a>
+
           </div>
         </div>
       </div>
