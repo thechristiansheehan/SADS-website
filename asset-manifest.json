@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.ff359f75.css",
+    "main.css": "/static/css/main.926715a4.css",
     "main.js": "/static/js/main.e23c75d6.js",
     "static/js/453.f3a76751.chunk.js": "/static/js/453.f3a76751.chunk.js",
     "static/media/sadsbanner.mp4": "/static/media/sadsbanner.6c92f96882cfa30e727b.mp4",
@@ -10,12 +10,12 @@
     "static/media/sads_logo2.png": "/static/media/sads_logo2.704bd900ea86f7478bcd.png",
     "static/media/RionaSansMedium.ttf": "/static/media/RionaSansMedium.fd9a7a5e929804760f3e.ttf",
     "index.html": "/index.html",
-    "main.ff359f75.css.map": "/static/css/main.ff359f75.css.map",
+    "main.926715a4.css.map": "/static/css/main.926715a4.css.map",
     "main.e23c75d6.js.map": "/static/js/main.e23c75d6.js.map",
     "453.f3a76751.chunk.js.map": "/static/js/453.f3a76751.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ff359f75.css",
+    "static/css/main.926715a4.css",
     "static/js/main.e23c75d6.js"
   ]
 }
